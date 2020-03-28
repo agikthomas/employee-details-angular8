@@ -1,0 +1,12 @@
+<app-loading-spinner *ngIf="dataLoading"></app-loading-spinner>
+<div class="flex-container" *ngIf="!dataLoading">
+    <table mat-table [dataSource]="addressDetails " class="mat-elevation-z8">
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+        <ng-container matColumnDef="Address">
+            <th mat-header-cell *matHeaderCellDef style="text-align: center;"> ADDRESS</th>
+            <td mat-cell *matCellDef="let element" class="mat-column-number"> {{element}} </td>
+        </ng-container>
+    </table>
+</div>

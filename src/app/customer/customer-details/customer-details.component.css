@@ -1,0 +1,23 @@
+.example-card {
+    max-width: 80%;
+}
+
+table {
+    width: 80%;
+  }
+
+  .flex-container {
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+  }
+
+  .mat-header-cell {
+    font-weight: 900;
+    background: #d7e8e4;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
